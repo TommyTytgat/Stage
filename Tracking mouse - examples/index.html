@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="index.css">
+
+  <title>Tracking Mouse Data</title>
+</head>
+<body>
+  <div class="container" id="Mouse_Tracking">
+    <h1>Mouse Tracking</h1>
+    <p>Deze pagina bevatten enkele demo's van wat er allemaal mogelijk is met het mousemove-event van jQuery.</p>
+    <p>Alle div's deze pagina gehoverd worden, kleuren rood en vergroten.</p>
+  </div>
+  <div class="container flex" style="justify-content: space-between;">
+    <div class="card" id="CardNr1">
+      <h1>Card #1</h1>
+      Hieronder een 'switch' die toggelt als de mousemove-variabele 'hover-me' is.
+    </div>
+    <div class="card" id="CardNr2">
+      <h1>Card #2</h1>
+      Deze hover-me verandert de class van de switch onder card #1 van 'off' naar 'on' en verandert wat tekst.
+    </div>
+  </div>
+  <div class="container flex" style="justify-content: space-between;">
+    <div id="switch">
+      <div class="off" id="color">
+        <span id="State">OFF</span>
+      </div>
+    </div>
+    <div id="hover-me" style="line-height: 3em;"><span id="hover-me">HOVER ME</span></div>
+  </div>
+  <!-- <div class="container flex">
+    <div class="card">
+      <p>Het is ook mogelijk om data te verzamelen van </p>
+    </div>
+  </div> -->
+
+  <script src="jQuery.js"></script>
+</body>
+</html>
