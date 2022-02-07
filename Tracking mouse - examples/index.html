@@ -15,8 +15,32 @@
   <div class="container" id="Mouse_Tracking">
     <h1>Mouse Tracking</h1>
     <p>Deze pagina bevatten enkele demo's van wat er allemaal mogelijk is met het mousemove-event van jQuery.</p>
-    <p>Alle div's deze pagina gehoverd worden, kleuren rood en vergroten.</p>
+
+    <h3>Algemeen</h3>
+    <div class="flex" style="justify-content: space-between;">
+      <p style="margin: .5em 0">Alle div's deze pagina gehoverd worden, kleuren blauw en vergroten.</p>
+      <div id="switch" style="cursor: pointer; transform: scale(100%); width: 15ch; margin-bottom: 1em;">
+        <div id="color" class="off" style="display: flex; justify-content: center; align-items: center; transform: scale(100%);">
+          <span id="state">OFF</span>
+        </div>
+      </div>
+    </div>
+    <div class="image-block">
+      <img src="./images/Any_Hover.png" alt="Any_Hover">
+      <span class="desc">Tracking mouse - examples > jQuery.js</span>
+    </div>
+
+
+    <p>Een voorgedefinieerde div selecteren en luisteren naar events</p>
+    <div class="image-block">
+      <img src="./images/Specific_hover.png" alt="Specific_hover">
+      <span class="desc">Tracking mouse - examples -> jQuery.js</span>
+    </div>
   </div>
+
+
+
+
   <div class="container flex" style="justify-content: space-between;">
     <div class="card" id="CardNr1">
       <h1>Card #1</h1>
@@ -27,19 +51,14 @@
       Deze hover-me verandert de class van de switch onder card #1 van 'off' naar 'on' en verandert wat tekst.
     </div>
   </div>
-  <div class="container flex" style="justify-content: space-between;">
-    <div id="switch">
-      <div class="off" id="color">
+  <div class="container flex" style="justify-content: space-between; transform: scale(100%);">
+    <div id="switch-hover" style="transform: scale(100%);">
+      <div class="off" id="color-hover" style="transform: scale(100%);">
         <span id="State">OFF</span>
       </div>
     </div>
     <div id="hover-me" style="line-height: 3em;"><span id="hover-me">HOVER ME</span></div>
   </div>
-  <!-- <div class="container flex">
-    <div class="card">
-      <p>Het is ook mogelijk om data te verzamelen van </p>
-    </div>
-  </div> -->
 
   <script src="jQuery.js"></script>
 </body>
